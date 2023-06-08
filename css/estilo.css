@@ -1,0 +1,328 @@
+header {
+  background-color: #1e1e1e; }
+  header .logo {
+    margin: 0;
+    padding: 25px;
+    color: red;
+    width: 200px; }
+    header .logo:hover {
+      transform: scale(1.2); }
+  header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto; }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px; }
+    header nav a {
+      font-size: 1.5em;
+      padding: 5px 12px;
+      text-decoration: none;
+      color: white; }
+      header nav a:hover {
+        color: red;
+        transform: scale(1.2); }
+
+button, #final button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid red;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: black;
+  background-color: red; }
+  button:hover, #final button:hover {
+    background-color: black;
+    color: red; }
+
+/*Acceso a productos*/
+/*haciendo uso de mixin como muestra*/
+#prim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multi/shroud.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white; }
+  #prim button {
+    font-size: 1.75em; }
+
+#somos-gam {
+  text-align: center;
+  padding: 200px 12px; }
+
+.color-nombrePag {
+  color: red; }
+
+/*Acceso a WorkWithUs*/
+/*haciendo uso de mixin como muestra*/
+#final {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 40vh;
+  background-color: #1e1e1e;
+  color: white;
+  /*haciendo uso de extend como muestra*/ }
+  #final h2 {
+    font-size: 2em; }
+  #final button {
+    font-size: 2em;
+    margin-top: 25px; }
+
+#cono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multi/conocenos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white; }
+  #cono p {
+    max-width: 90%; }
+
+.container-products {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem; }
+
+.card-product {
+  background-color: #eeeeee;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); }
+
+.container-img {
+  position: relative; }
+  .container-img img {
+    width: 100%; }
+
+.content-card-product {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, min-content);
+  row-gap: 1rem; }
+  .content-card-product h3 {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 1rem; }
+    .content-card-product h3:hover {
+      color: red; }
+
+.add-cart {
+  justify-self: start;
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .add-cart:hover {
+    color: red;
+    border-color: red; }
+
+/*El uso del nesting genera problemas con el i*/
+.add-cart i {
+  font-size: 1.5rem;
+  color: black;
+  transition: all 0.4s ease; }
+
+.add-cart:hover i {
+  color: red; }
+
+.content-card-product .price {
+  justify-self: end;
+  align-self: center;
+  font-size: 1.7rem;
+  font-weight: 600; }
+
+.content-card-product .price span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 0.5rem; }
+
+.formulario_BootStrap {
+  margin: 100px;
+  color: #5535e6; }
+
+.paginaFormulario {
+  background-color: gray; }
+
+.formulario {
+  color: #747879;
+  width: 450px;
+  background-color: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 100px;
+  box-shadow: 7px 13px 37px #000; }
+
+.formularioTitulo {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: white; }
+
+.espacios {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  color: white; }
+
+footer {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  padding: 2rem;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.LogoFooter {
+  height: 80px;
+  margin-bottom: 1rem; }
+
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem; }
+
+.social-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid #f2f2f2;
+  background-image: url(../multi/social/instagram.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem; }
+  .social-icon:hover {
+    background-color: #121211;
+    filter: invert(1); }
+
+.social-icon:nth-of-type(2) {
+  background-image: url(../multi/social/youtube.png); }
+
+.social-icon:nth-of-type(3) {
+  background-image: url(../multi/social/linkedin.png); }
+
+.social-icon:nth-of-type(4) {
+  background-image: url(../multi/social/github.png); }
+
+.footer-menu-container {
+  list-style-type: none;
+  color: #f2f2f2;
+  font-size: 18px; }
+
+.menu-item {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6; }
+  .menu-item:hover {
+    opacity: 1; }
+
+.copyright {
+  color: #f2f2f2;
+  opacity: 0.3;
+  text-align: center; }
+
+@media screen and (min-width: 720px) {
+  header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999; }
+    header .contenedor {
+      flex-direction: row;
+      justify-content: space-between; }
+    header nav {
+      flex-direction: row;
+      padding-bottom: 0;
+      padding-right: 20px; }
+  #prim h1 {
+    font-size: 5em; }
+  #somos-gam .container {
+    display: flex;
+    justify-content: space-evenly; }
+  #somos-gam .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #somos-gam .img-container {
+    background-image: url(../multi/somos.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px; }
+  #final h2 {
+    font-size: 5em; }
+  #final button {
+    font-size: 2em; }
+  .main-content {
+    padding-top: 0px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+nav {
+  font-family: "Bebas Neue", sans-serif; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+h1 {
+  font-size: 3.5em; }
+
+h2 {
+  font-size: 2.7em;
+  padding: 20px; }
+
+h3 {
+  font-size: 2em; }
+
+p {
+  font-size: 1.25em; }
+
+ul {
+  list-style: none; }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../multi/favicon.ico" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <title>Trabaja con nosotros</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <a href="../index.html">
+          <img src="../multi/logo.jpg" alt="logo_header" class="logo" />
+        </a>
+        <nav>
+          <a href="./conocenos.html">Conocenos</a>
+          <a href="./productos.html">Productos</a>
+          <a href="./soporte.html">Soporte</a>
+          <a href="./trabajaconnosotros.html">Trabaja con nosotros</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="formulario">
+        <h4 class="formularioTitulo"></h4>
+        <form action="">
+          <div>
+            <label for="nombre"></label>
+            <input class="espacios" type="text" name="nombre" placeholder="Ingresa tu nombre" required/>
+          </div>
+          <br />
+          <div>
+            <label for="apellido"></label>
+            <input class="espacios"
+              type="text"
+              name="apellido"
+              placeholder="Ingrese su apellido"
+            required/>
+          </div>
+          <br />
+          <div>
+            <label for="email"></label>
+            <input class="espacios" type="email" placeholder="Ingresa tu email" required />
+          </div>
+          <br>
+          <div>
+            <label for="Tipo de documento">Tipo de documento</label>
+            <select name="nacionalidad" class="espacios">
+              <option value="DNI">DNI</option>
+              <option value="Pas">Pasaporte</option>
+              <option value="CE">Cédula extranjera</option>
+              <option value="Otro">Otro</option>
+            </select required>
+          </div>
+          <br>
+        <div>
+          <label for="apellido">N° de documento </label>
+          <input class="espacios"
+            type="text"
+            name="documento"
+            placeholder="Ingrese su documento"
+          required/>
+        </div>
+          <br />
+          <div>
+            <label for="Fecha de nacimiento">Fecha de nacimiento</label>
+            <input class="espacios" type="date">
+          </div>
+          <br>
+          <div>
+            <input class="espacios" type="file">
+          </div>
+          <br>
+            <div>
+                <input class="espacios" type="submit" value="Enviar Formulario">
+                <input class="espacios" type="reset" value="Borrar formulario">
+            </div>
+        </form>
+      </section>
+      <footer>
+        <img src="../multi/logo 2.jpg" alt="logo_footer" class="LogoFooter" />
+        <div class="social-icons-container">
+          <a href="" class="social-icon"></a>
+          <a href="" class="social-icon"></a>
+          <a href="" class="social-icon"></a>
+          <a href="" class="social-icon"></a>
+        </div>
+        <span class="copyright">&copy;2023, GamerZone. All rights reserved.</span>
+      </footer>
+    </body>
+  </html>

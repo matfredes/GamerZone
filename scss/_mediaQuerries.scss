@@ -1,0 +1,57 @@
+@media screen and (min-width: 720px) {
+  header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    .contenedor {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    nav {
+      flex-direction: row;
+      padding-bottom: 0;
+      padding-right: 20px;
+    }
+  }
+
+  #prim h1 {
+    font-size: 5em;
+  }
+
+  #somos-gam {
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .texto {
+      width: 50%;
+      max-width: 600px;
+      text-align: initial;
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .img-container {
+      background-image: url(../multi/somos.jpg);
+      background-size: cover;
+      background-position: center center;
+      height: 500px;
+      width: 400px;
+    }
+  }
+
+  #final {
+    h2 {
+      font-size: 5em;
+    }
+    button {
+      font-size: 2em;
+    }
+  }
+
+  .main-content {
+    padding-top: 0px;
+  }
+}

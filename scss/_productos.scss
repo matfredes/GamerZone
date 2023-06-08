@@ -1,0 +1,81 @@
+.container-products {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+}
+
+.card-product {
+  background-color: rgb(238, 238, 238);
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.container-img {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.content-card-product {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, min-content);
+  row-gap: 1rem;
+  h3 {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.add-cart {
+  justify-self: start;
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    color: red;
+    border-color: red;
+  }
+}
+
+/*El uso del nesting genera problemas con el i*/
+
+.add-cart i {
+  font-size: 1.5rem;
+  color: black;
+  transition: all 0.4s ease;
+}
+
+.add-cart:hover i {
+  color: red;
+}
+
+.content-card-product .price {
+  justify-self: end;
+  align-self: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.content-card-product .price span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 0.5rem;
+}

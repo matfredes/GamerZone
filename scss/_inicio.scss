@@ -1,0 +1,72 @@
+@mixin button_specs($display, $items, $content, $text, $direction, $height) {
+  display: $display;
+  align-items: $items;
+  justify-content: $content;
+  text-align: $text;
+  flex-direction: $direction;
+  height: $height;
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid red;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: black;
+  background-color: red;
+  &:hover {
+    background-color: black;
+    color: red;
+  }
+}
+
+/*Acceso a productos*/
+
+/*haciendo uso de mixin como muestra*/
+
+#prim {
+  @include button_specs(flex, center, center, center, column, 90vh);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../multi/shroud.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  button {
+    font-size: 1.75em;
+  }
+}
+
+#somos-gam {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+.color-nombrePag {
+  color: red;
+}
+
+/*Acceso a WorkWithUs*/
+
+/*haciendo uso de mixin como muestra*/
+
+#final {
+  @include button_specs(flex, center, center, center, column, 40vh);
+  background-color: rgb(30, 30, 30);
+  color: white;
+  h2 {
+    font-size: 2em;
+  }
+  /*haciendo uso de extend como muestra*/
+  button {
+    @extend button;
+    font-size: 2em;
+    margin-top: 25px;
+  }
+}
